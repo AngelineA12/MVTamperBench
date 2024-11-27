@@ -12,43 +12,29 @@
             font-family: 'Poppins', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
+            color: #1e1e1e;
+            background-color: #ffffff;
             overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Background Video */
-        video.background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: -1;
+            text-align: center; /* Center alignment for the page */
         }
 
         header {
-            background: rgba(0, 0, 0, 0.6);
+            background: #f7f7f7;
             padding: 4rem 2rem;
-            text-align: center;
-            position: relative;
-            z-index: 1;
         }
 
         header h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             margin: 0;
             font-weight: 700;
-            color: #fff;
+            color: #181818;
         }
 
         header p {
             margin-top: 0.5rem;
             font-size: 1.2rem;
             font-weight: 500;
-            color: #f0f0f0;
+            color: #202020;
         }
 
         nav {
@@ -58,7 +44,7 @@
         nav a {
             text-decoration: none;
             color: white;
-            background: #ff6347;
+            background: #005e91;
             padding: 1rem 2rem;
             border-radius: 50px;
             margin: 0 1rem;
@@ -67,34 +53,27 @@
         }
 
         nav a:hover {
-            background: #ff4500;
+            background: #001017;
             transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(255, 69, 0, 0.4);
-            transition: all 0.4s ease;
+            box-shadow: 0 4px 8px rgba(2, 132, 192, 0.949);
         }
 
         .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.4);
-            padding: 2rem;
-            text-align: center;
-            color: white;
-            font-size: 1.5rem;
+            background: #dcdcdc;
+            padding: 0.5rem;
+            color: #202020;
+            font-size: 1.6rem;
             border-radius: 10px;
+            margin: 2rem auto;
+            width: 75%;
+            
         }
 
         main {
             padding: 3rem 2rem;
-            max-width: 1200px;
-            margin: 4rem auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 1;
-            opacity: 0.9;
+            max-width: 800px; /* Centralize main content */
+            margin: 0 auto;
+            
         }
 
         section {
@@ -106,7 +85,7 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1.2rem;
             font-size: 2.5rem;
-            color: #001533;
+            color: #181818;
             font-weight: 700;
         }
 
@@ -114,58 +93,25 @@
             content: "";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 60px;
             height: 5px;
-            background: #ff6347;
+            background: #0077b6;
         }
 
         .content {
             text-align: justify;
             line-height: 1.8;
             font-size: 1.1rem;
-            color: #131313;
-        }
-
-        .images, .graphs {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .card {
-            flex: 0 1 calc(45% - 1rem);
-            background: #f1f1f1;
-            margin-bottom: 2rem;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .card p {
-            padding: 1rem;
-            font-size: 1rem;
-            color: #1c1b1b;
+            color: #444;
         }
 
         .links a {
             display: inline-block;
             text-decoration: none;
             color: white;
-            background: #0077b6;
+            background:#005e91;
             padding: 0.8rem 1.6rem;
             border-radius: 50px;
             margin: 1rem;
@@ -174,55 +120,49 @@
         }
 
         .links a:hover {
-            background: #023e8a;
+            background: #001017;
             transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0, 60, 139, 0.4);
+            box-shadow:  0 4px 8px rgba(2, 132, 192, 0.949);
         }
 
         .line-design {
             text-align: center;
             margin: 3rem 0;
-            position: relative;
-        }
-
-        .line-design::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 40%;
-            height: 2px;
-            background: #ff6347;
-        }
-
-        .line-design::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 40%;
-            height: 2px;
-            background: #ff6347;
+            color: #181818;
         }
 
         .line-design span {
-            background: white;
             padding: 0 1.5rem;
-            font-size: 1.4rem;
-            color: #001533;
-            font-weight: 600;
+            font-size: 1.8rem;
+            color: #202020;
+            font-weight: 800;
+        }
+
+        img {
+            width: 70%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 10px; /* Optional for aesthetics */
+        }
+
+        .images{
+            text-align: justify;
+        }
+
+        .Graphs{
+            text-align: justify;
         }
 
         footer {
-            background: #1d3557;
-            color: white;
+            background: #f7f7f7;
+            color: #333;
             text-align: center;
             padding: 2rem 1rem;
             margin-top: 4rem;
         }
 
         footer a {
-            color: #ff6347;
+            color: #0077b6;
             text-decoration: none;
         }
 
@@ -230,15 +170,15 @@
             text-decoration: underline;
         }
 
-        .social-icons a {
-            color: white;
-            font-size: 2rem;
+        .social-icons img {
+            width: 40px;
+            height: auto;
             margin: 0 1rem;
-            transition: color 0.3s;
+            transition: transform 0.3s;
         }
 
-        .social-icons a:hover {
-            color: #ff6347;
+        .social-icons img:hover {
+            transform: scale(1.1);
         }
 
         /* Responsive Design */
@@ -254,10 +194,6 @@
             nav a {
                 font-size: 0.9rem;
                 padding: 0.8rem 1.5rem;
-            }
-
-            .card {
-                flex: 0 1 calc(100% - 1rem);
             }
 
             .hero {
@@ -276,20 +212,10 @@
                 font-size: 1rem;
                 padding: 1rem;
             }
-
-            .line-design::before,
-            .line-design::after {
-                width: 30%;
-            }
         }
     </style>
 </head>
 <body>
-    <video class="background-video" autoplay loop muted>
-        <source src="background_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
     <header>
         <h1>MVTamperBench: Adversarial Benchmark for Evaluating the Robustness of Video Language Model</h1>
         <p>Comprehensive evaluation framework for robust video-language models</p>
@@ -306,7 +232,6 @@
         <p>Explore our benchmark, uncover insights, and evaluate cutting-edge VLM models.</p>
     </div>
 
-
     <main>
         <section id="abstract">
             <h2>Abstract</h2>
@@ -317,7 +242,6 @@
                     Our benchmark is based on MVBench dataset and implements five various techniques to try and introduce realistic alterations like substitution, masking, dropping, repeating, and rotating that may be encountered in real life scenarios including media editing, misinformation or even surveillance tampering.
                     We employed a tailored codebase for the purpose of handling the aforementioned modifications to MVBench videos with the aim of addressing diverse test cases to the VLMs. By testing state-of-the-art models against this benchmark, we accomplished our goals of understanding such manipulable content model weaknesses and strengths and the weaknesses and strengths of the manipulated models. 
                     According to our analysis, VLMs that are resistant to attempts in tampering still pose a reliable tool that is useful in adversarial situations remain in high demand. As a use case, we embedded the benchmark into VLMEvalKit, which we believe will pave way for future work focused on bolstering model robustness.
-                    MVTamperBench is a very important point in the process of developing a real understanding of video content, that aims to become a practical aid for the average user.
                 </p>
             </div>
         </section>
@@ -325,42 +249,41 @@
         <div class="line-design"><span>Visuals</span></div>
 
         <section id="images">
+            
             <h2>Images</h2>
-            <div class="images">
-                <div class="card">
-                    <img src="Tampering_Frames.png" alt="Example Frames">
-                    <p>The above image gives us the clear idea of how these tampering effects are introduced into a video. 
-                    It shows us the comparison study of frames from the original video and their frames from respective tampering effects. 
-                    In this case, one frame is taken from each one second and was displayed for comparative study on how it works. </p>
-                </div>
+            
+            <img src="Tampering_Frames.png" alt="Example Frames">
+            <div class = "images">
+            <p>The above image gives us the clear idea of how these tampering effects are introduced into a video. 
+                It shows us the comparison study of frames from the original video and their frames from respective tampering effects. 
+                In this case, one frame is taken from each one second and was displayed for comparative study on how it works.</p>
             </div>
         </section>
 
         <section id="graphs">
+
             <h2>Graphs</h2>
-            <div class="graphs">
-                <div class="card">
-                    <img src="Distribution image.png" alt="Video Length Distribution Graph">
-                    <p> The above graph represents the distribution of the lengths of tampered videos in seconds.
-                        The x -axis implies the lengths of the videos within the range of 0 to 175 seconds. 
-                        The y-axis will represent the number of videos per length. This histogram shows that most of the videos are concentrated near 0.
-                        This means that most of the videos are relatively short. 
-                        As the video length increases, the number of videos decreases, with fewer longer videos observed.</p>
-                </div>
-                <div class="card">
-                    <img src="tampering_effects_heatmap.png" alt="Accuracy of Tampering Effects Across the Models">
-                    <p>The above heatmap compares the performance of different models for handling tampering effects like Dropping, Masking, Repetition, Rotation, and Substitution, measured by accuracy in percentages. 
-                        While the molmo models, such as molmo-7B-D-0924 and molmoE-1B-0924, achieve perfect accuracy, 100%, on all tampering effects, it shows their superior robustness and adaptability to all types of tampering. 
-                        The InternVL2 models (2B, 4B, and 8B) also did quite well, keeping accuracies that were almost always 100% for most effects. Models like Aria and VILA1.5-40b did well with some categories of tampering. 
-                        In contrast, the low-performance models such as Llama-3-VILA1.5-8b, llava series, and Phi-3.5-Vision struggled with accuracies close to 0% in many cases, reflecting their failure to effectively counter the tampering attacks. 
-                    </p>
-                </div>
+            
+            <img src="Distribution image.png" alt="Video Length Distribution Graph">
+            <div class = "Graphs">
+            <p>The above graph represents the distribution of the lengths of tampered videos in seconds.
+                The x -axis implies the lengths of the videos within the range of 0 to 175 seconds. 
+                The y-axis will represent the number of videos per length. This histogram shows that most of the videos are concentrated near 0.
+                This means that most of the videos are relatively short. 
+                As the video length increases, the number of videos decreases, with fewer longer videos observed.</p>
+            </div>
+            <img src="tampering_effects_heatmap.png" alt="Accuracy of Tampering Effects Across the Models">
+            <div class = "Graphs">
+            <p>The above heatmap compares the performance of different models for handling tampering effects like Dropping, Masking, Repetition, Rotation, and Substitution, measured by accuracy in percentages. 
+                While the molmo models, such as molmo-7B-D-0924 and molmoE-1B-0924, achieve perfect accuracy, 100%, on all tampering effects, it shows their superior robustness and adaptability to all types of tampering. 
+                The InternVL2 models (2B, 4B, and 8B) also did quite well, keeping accuracies that were almost always 100% for most effects. Models like Aria and VILA1.5-40b did well with some categories of tampering. 
+                In contrast, the low-performance models such as Llama-3-VILA1.5-8b, llava series, and Phi-3.5-Vision struggled with accuracies close to 0% in many cases, reflecting their failure to effectively counter the tampering attacks.</p>
             </div>
         </section>
 
         <section id="leaderboard">
             <h2>Leaderboard</h2>
-            <div class="content">
+            <div class="links">
                 <p>Check the leaderboard for the top-performing models on our benchmark.</p>
                 <a href="https://huggingface.co/spaces/opencompass/open_vlm_leaderboard" target="_blank">View Leaderboard</a>
             </div>
@@ -378,8 +301,8 @@
     <footer>
         <p>&copy; 2024 VLM Benchmark. All rights reserved.</p>
         <div class="social-icons">
-            <a href="https://github.com/amitbcp/TamperBench" target="_blank"><img src = "https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" style="width: 10%; height: auto;"></a>
-            <a href="https://huggingface.co/datasets/Srikant86/MVTamperBench/tree/main/video" target="_blank"><img src = "https://chunte-hfba.static.hf.space/images/Brand%20Logos/hf-logo-with-title.png" style="width: 20%; height: auto;"></a>
+            <a href="https://github.com/amitbcp/TamperBench" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png" alt="GitHub"></a>
+            <a href="https://huggingface.co/datasets/Srikant86/MVTamperBench/tree/main/video" target="_blank"><img src="https://chunte-hfba.static.hf.space/images/Brand%20Logos/hf-logo-with-title.png" alt="Hugging Face"></a>
         </div>
     </footer>
 </body>
