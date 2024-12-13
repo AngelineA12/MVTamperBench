@@ -266,18 +266,22 @@
             
             <img src="Distribution image.png" alt="Video Length Distribution Graph">
             <div class = "Graphs">
-            <p>The above graph represents the distribution of the lengths of tampered videos in seconds.
+            <p>The above Distribution graph represents the distribution of the lengths of tampered videos in seconds.
                 The x -axis implies the lengths of the videos within the range of 0 to 175 seconds. 
                 The y-axis will represent the number of videos per length. This histogram shows that most of the videos are concentrated near 0.
                 This means that most of the videos are relatively short. 
                 As the video length increases, the number of videos decreases, with fewer longer videos observed.</p>
             </div>
-            <img src="tampering_effects_heatmap.png" alt="Accuracy of Tampering Effects Across the Models">
+            <img src="OverallPerformancebar.jpg" alt="Overall Performance of the Models">
             <div class = "Graphs">
-            <p>The above heatmap compares the performance of different models for handling tampering effects like Dropping, Masking, Repetition, Rotation, and Substitution, measured by accuracy in percentages. 
-                While the molmo models, such as molmo-7B-D-0924 and molmoE-1B-0924, achieve perfect accuracy, 100%, on all tampering effects, it shows their superior robustness and adaptability to all types of tampering. 
-                The InternVL2 models (2B, 4B, and 8B) also did quite well, keeping accuracies that were almost always 100% for most effects. Models like Aria and VILA1.5-40b did well with some categories of tampering. 
-                In contrast, the low-performance models such as Llama-3-VILA1.5-8b, llava series, and Phi-3.5-Vision struggled with accuracies close to 0% in many cases, reflecting their failure to effectively counter the tampering attacks.</p>
+                <p>The above Overall Model Performance graph shows the overall accuracy of different models, where InternVL2-8B outperforms all with the highest accuracy above 80%. Aria and Phi-3.5-Vision follow closely with slightly lower performance.
+                 Models like Vintern-3B-beta and Llama-2-13B Vision-Instruct show moderate performance, while NVLM and VILA models exhibit relatively lower accuracies, with VILA-1.5-13B performing the least effectively.</p>
+            </div>
+            <img src="Heatmap_of_Effects.jpg" alt="Accuracy of Tampering Effects Across the Models">
+            <div class = "Graphs">
+            <p>The above heatmap indicates that InternVL2.8B is the strongest, with high accuracy held for all tampering effects while models such as VITL1.5-13b and VITL1.5-3b are highly susceptible to data tamperings.
+                All tampering effects, including masking and substitution, tend to decrease the accuracy in most models, except that InternVL2.8B and especially PHI-3.5-Vision react slightly stronger. 
+                This analysis therefore calls for model improvement, more so to address how well the models can cope with tampered data in such real-world applications.</p>
             </div>
         </section>
 
