@@ -76,7 +76,7 @@ You can access the MVTamperBench dataset directly from the Hugging Face reposito
 
 1. Clone the Hugging Face repository:
    ```bash
-   git clone [https://huggingface.co/datasets/mvtamperbench](https://huggingface.co/datasets/Srikant86/MVTamperBench)
+   git clone (https://huggingface.co/datasets/Srikant86/MVTamperBench)
    cd mvtamperbench
    ```
 
