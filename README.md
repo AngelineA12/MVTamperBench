@@ -9,7 +9,7 @@
 3. **Rotation**: Rotates a 1-second segment by 180 degrees, introducing spatial distortion.
 4. **Substitution**: Replaces a 1-second segment with a random clip from another video, disrupting the temporal and contextual flow.
 
-The tampering effects are applied to the start of each video to ensure consistent evaluation across models.
+The tampering effects are applied to the end of each video to ensure consistent evaluation across models.
 
 ---
 
@@ -59,7 +59,7 @@ MVTamperBench is built with modularity, scalability, and reproducibility at its 
 - **Scalability**: Supports customizable tampering parameters, such as location and duration.
 - **Integration**: Fully compatible with VLMEvalKit, enabling seamless evaluations of tampering robustness alongside general VLM capabilities.
 
-By maintaining consistent tampering duration (1 second) and location (starting of the video), MVTamperBench ensures fair and comparable evaluations across models.
+By maintaining consistent tampering duration (1 second) and location (ending of the video), MVTamperBench ensures fair and comparable evaluations across models.
 
 ---
 
