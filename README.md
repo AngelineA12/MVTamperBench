@@ -2,15 +2,14 @@
 
 ## Overview
 
-**MVTamperBench** is a robust benchmark designed to evaluate Vision-Language Models (VLMs) against adversarial video tampering effects. It leverages the diverse and well-structured MVBench dataset, systematically augmented with five distinct tampering techniques:
+**MVTamperBench** is a robust benchmark designed to evaluate Vision-Language Models (VLMs) against adversarial video tampering effects. It leverages the diverse and well-structured MVBench dataset, systematically augmented with four distinct tampering techniques:
 
-1. **Frame Dropping**: Removes a 1-second segment, creating temporal discontinuity.
-2. **Masking**: Overlays a black rectangle on a 1-second segment, simulating visual data loss.
-3. **Repetition**: Repeats a 1-second segment, introducing temporal redundancy.
-4. **Rotation**: Rotates a 1-second segment by 180 degrees, introducing spatial distortion.
-5. **Substitution**: Replaces a 1-second segment with a random clip from another video, disrupting the temporal and contextual flow.
+1. **Masking**: Overlays a black rectangle on a 1-second segment, simulating visual data loss.
+2. **Repetition**: Repeats a 1-second segment, introducing temporal redundancy.
+3. **Rotation**: Rotates a 1-second segment by 180 degrees, introducing spatial distortion.
+4. **Substitution**: Replaces a 1-second segment with a random clip from another video, disrupting the temporal and contextual flow.
 
-The tampering effects are applied to the middle of each video to ensure consistent evaluation across models.
+The tampering effects are applied to the start of each video to ensure consistent evaluation across models.
 
 ---
 
@@ -41,7 +40,7 @@ The MVTamperBench dataset integrates videos from several sources, each contribut
 
 ### Dataset Expansion
 
-The original MVBench dataset contains 3,699 videos, which have been systematically expanded through tampering effects, resulting in a total of **18,495 videos**. This ensures:
+The original MVBench dataset contains 3,699 videos, which have been systematically expanded through tampering effects, resulting in a total of **14,796 videos**. This ensures:
 
 - **Diversity**: Varied adversarial challenges for robust evaluation.
 - **Volume**: Sufficient data for training and testing.
@@ -60,7 +59,7 @@ MVTamperBench is built with modularity, scalability, and reproducibility at its 
 - **Scalability**: Supports customizable tampering parameters, such as location and duration.
 - **Integration**: Fully compatible with VLMEvalKit, enabling seamless evaluations of tampering robustness alongside general VLM capabilities.
 
-By maintaining consistent tampering duration (1 second) and location (center of the video), MVTamperBench ensures fair and comparable evaluations across models.
+By maintaining consistent tampering duration (1 second) and location (starting of the video), MVTamperBench ensures fair and comparable evaluations across models.
 
 ---
 
